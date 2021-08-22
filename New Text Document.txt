@@ -1,0 +1,294 @@
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT
+$ git config --global user.name Arun
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT
+$ git config --global user.email arun2kank17@gmail.com
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT
+$ git config --global user.email
+arun2kank17@gmail.com
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT
+$ git config --global user.name
+Arun
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT
+$ code.
+bash: code.: command not found
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT
+$ code .
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT
+$  git init
+Initialized empty Git repository in C:/Users/arun2/OneDrive/Desktop/GIT/.git/
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ ls -lart
+total 12
+drwxr-xr-x 1 arun2 197609 0 Aug 22 12:47 ../
+drwxr-xr-x 1 arun2 197609 0 Aug 22 12:52 ./
+drwxr-xr-x 1 arun2 197609 0 Aug 22 12:52 .git/
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git add index.html
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git commiit
+git: 'commiit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git commit
+[master (root-commit) 99a9e3e] initial commit
+ 1 file changed, 15 insertions(+)
+ create mode 100644 index.html
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ touch about.html
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ touch contact.html
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ touch monuments.html
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.html
+        contact.html
+        monuments.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git add -A
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   monuments.html
+
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   monuments.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git add -A
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   monuments.html
+
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git commit -m "added more htmls"
+[master 80046fa] added more htmls
+ 3 files changed, 15 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 contact.html
+ create mode 100644 monuments.html
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git checkout contact.html
+Updated 1 path from the index
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git checkout -f
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git log
+commit 80046fae8dd15bfc898c826dcf41a815125c364d (HEAD -> master)
+Author: Arun <arun2kank17@gmail.com>
+Date:   Sun Aug 22 13:13:09 2021 +0530
+
+    added more htmls
+
+commit 99a9e3ee746d6f131ccc9edb59661e19f4fbfb04
+Author: Arun <arun2kank17@gmail.com>
+Date:   Sun Aug 22 13:04:03 2021 +0530
+
+    initial commit
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git log -p -1
+commit 80046fae8dd15bfc898c826dcf41a815125c364d (HEAD -> master)
+Author: Arun <arun2kank17@gmail.com>
+Date:   Sun Aug 22 13:13:09 2021 +0530
+
+    added more htmls
+
+diff --git a/about.html b/about.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/contact.html b/contact.html
+new file mode 100644
+index 0000000..b138f08
+--- /dev/null
++++ b/contact.html
+@@ -0,0 +1,15 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta http-equiv="X-UA-Compatible" content="IE=edge">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git diff
+diff --git a/index.html b/index.html
+index b138f08..995ae29 100644
+--- a/index.html
++++ b/index.html
+@@ -8,8 +8,8 @@
+     <title>Document</title>
+ </head>
+
+-<body>
++<bodydsds>
+
+-</body>
++    </body>
+
+ </html>
+\ No newline at end of file
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git add -A
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git diff
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git diff --staged
+diff --git a/index.html b/index.html
+index b138f08..995ae29 100644
+--- a/index.html
++++ b/index.html
+@@ -8,8 +8,8 @@
+     <title>Document</title>
+ </head>
+
+-<body>
++<bodydsds>
+
+-</body>
++    </body>
+
+ </html>
+\ No newline at end of file
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git checkout -f
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+arun2@Arun-kank MINGW64 ~/OneDrive/Desktop/GIT (master)
+$
